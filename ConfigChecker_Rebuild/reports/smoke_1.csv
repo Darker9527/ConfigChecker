@@ -1,0 +1,17 @@
+﻿task_id,task_name,devtype,brand,baseline_name,status,risk,evidence,reason,suggestion
+1,smoke,交换机,华为,SSH管理安全,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+1,smoke,交换机,华为,日志与时间同步,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。

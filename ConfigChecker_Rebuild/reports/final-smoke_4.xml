@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config_check_report><task><id>4</id><name>final-smoke</name><devtype>交换机</devtype><brand>华为</brand><config_path>examples\huawei.cfg</config_path><created_at>2026-07-07 18:10:50</created_at></task><summary><status name="需复核" count="23" /></summary><results><result><baseline_name>HUA-NET-001 SSH与Telnet</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>HUA-NET-002 AAA与本地用户</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>HUA-NET-003 日志与NTP</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>SSH管理安全</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>VRP-AAA口令</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>VRP-SNMPv3</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>VRP-SSH与Telnet</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L4: user-interface vty 0 4
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>VRP-VTY-ACL</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L4: user-interface vty 0 4
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>VRP-日志NTP</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>日志与时间同步</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>交换机VLAN配置</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>交换机日志审计</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>交换机端口安全</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>交换机管理安全</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>入侵防范-SNMP安全</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>入侵防范-关闭高危服务</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>入侵防范-端口安全</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L8: rule 5 permit source 10.10.10.0 0.0.0.255
+L9: info-center enable
+L10: info-center loghost 10.10.20.10</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>安全审计-日志服务器</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>网络架构-VLAN隔离</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>访问控制-ACL最小化</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>身份鉴别-加密管理</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>身份鉴别-本地账户</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>身份鉴别-登录超时失败</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result></results></config_check_report>

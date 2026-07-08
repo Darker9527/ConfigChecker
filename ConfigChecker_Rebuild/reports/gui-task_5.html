@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>gui-task - 配置核查报告</title>
+  <style>
+    body { font-family: "Microsoft YaHei", Arial, sans-serif; margin: 32px; color: #1f2937; }
+    h1 { text-align: center; }
+    .meta, table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+    .meta td, th, td { border: 1px solid #d1d5db; padding: 8px; vertical-align: top; }
+    th { background: #1f4e79; color: white; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .pass { color: #047857; font-weight: bold; }
+    .fail { color: #b91c1c; font-weight: bold; }
+    .review { color: #b45309; font-weight: bold; }
+    pre { white-space: pre-wrap; margin: 0; }
+  </style>
+</head>
+<body>
+  <h1>配置核查报告</h1>
+  <table class="meta">
+    <tr><td>任务名称</td><td>gui-task</td><td>设备类型</td><td>交换机</td></tr>
+    <tr><td>设备品牌</td><td>华为</td><td>配置文件</td><td>C:\Users\O\Desktop\安全基线排查工具\ConfigChecker\config_file\Network\huawei.txt</td></tr>
+    <tr><td>生成时间</td><td>2026-07-08 10:57:05</td><td>检查项数量</td><td>23</td></tr>
+  </table>
+
+  <h2>结果汇总</h2>
+  <table>
+    <tr><th>状态</th><th>数量</th></tr>
+    <tr><td>需复核</td><td>23</td></tr>
+  </table>
+
+  <h2>风险统计</h2>
+  
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+    
+    
+    
+  
+  
+  <svg width="720" height="190" role="img" aria-label="风险统计柱状图">
+    <text x="0" y="18" fill="#111827" font-size="14">按风险等级统计</text>
+    <line x1="70" y1="150" x2="690" y2="150" stroke="#d1d5db"/>
+    <line x1="70" y1="35" x2="70" y2="150" stroke="#d1d5db"/>
+    <g>
+      <rect x="120" y="106.25" width="90" height="43.75" rx="4" fill="#b91c1c"><title>高风险：7</title></rect>
+      <text x="165" y="170" text-anchor="middle" fill="#374151">高风险</text><text x="165" y="101.25" text-anchor="middle" fill="#111827">7</text>
+      <rect x="310" y="50.0" width="90" height="100.0" rx="4" fill="#d97706"><title>中风险：16</title></rect>
+      <text x="355" y="170" text-anchor="middle" fill="#374151">中风险</text><text x="355" y="45.0" text-anchor="middle" fill="#111827">16</text>
+      <rect x="500" y="150.0" width="90" height="0.0" rx="4" fill="#059669"><title>低风险：0</title></rect>
+      <text x="545" y="170" text-anchor="middle" fill="#374151">低风险</text><text x="545" y="145.0" text-anchor="middle" fill="#111827">0</text>
+    </g>
+  </svg>
+
+  <h2>检查项明细</h2>
+  <table>
+    <tr><th>检查项</th><th>风险</th><th>状态</th><th>证据</th><th>原因</th><th>整改建议</th></tr>
+    
+    <tr>
+      <td>HUA-NET-001 SSH与Telnet</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L14: undo http server enable
+L15: undo http secure-server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>HUA-NET-002 AAA与本地用户</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>HUA-NET-003 日志与NTP</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>SSH管理安全</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L14: undo http server enable
+L15: undo http secure-server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>VRP-AAA口令</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>VRP-SNMPv3</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>VRP-SSH与Telnet</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>VRP-VTY-ACL</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>VRP-日志NTP</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>日志与时间同步</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>交换机VLAN配置</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L10: vlan batch 200 241 to 242 701
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>交换机日志审计</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>交换机端口安全</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>交换机管理安全</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>入侵防范-SNMP安全</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>入侵防范-关闭高危服务</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L14: undo http server enable
+L15: undo http secure-server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>入侵防范-端口安全</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L8: ipv6
+L12: undo telnet server enable
+L17: undo nap slave enable
+L21: user-bind static ip-address 192.168.37.130 mac-address 6c0b-84de-4b59 interface GigabitEthernet0/0/36
+L22: user-bind static ip-address 192.168.37.133 mac-address 6c0b-84de-4d07 interface GigabitEthernet0/0/20
+L23: user-bind static ip-address 192.168.37.143 mac-address 6c0b-849a-3669 interface GigabitEthernet0/0/42</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>安全审计-日志服务器</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>网络架构-VLAN隔离</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L10: vlan batch 200 241 to 242 701
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>访问控制-ACL最小化</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>身份鉴别-加密管理</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>身份鉴别-本地账户</td>
+      <td>高风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+    <tr>
+      <td>身份鉴别-登录超时失败</td>
+      <td>中风险</td>
+      <td class="review">需复核</td>
+      <td><pre>L5: info-center loghost source Vlanif701
+L6: info-center loghost 192.168.42.151 facility local5
+L12: undo telnet server enable
+L17: undo nap slave enable
+L52: acl number 2000
+L62: acl number 2100
+L63: description Limit_access_SNMP_Service
+L68: acl number 3000</pre></td>
+      <td>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。
+AI 判定失败：RuntimeError(&#39;AI 配置不完整：需要 ai_base_url、ai_api_key、ai_model&#39;)</td>
+      <td>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</td>
+    </tr>
+    
+  </table>
+</body>
+</html>

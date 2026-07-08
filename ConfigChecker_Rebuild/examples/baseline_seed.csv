@@ -1,0 +1,4 @@
+name,descr,reference,content,devtype,brand,chktype,cmd,risk,level
+SSH管理安全,远程管理应使用 SSH 并禁用 Telnet,GB/T 22239-2019,核查是否启用 SSH/SSHv2 并禁用 Telnet；三级要求管理来源限制到运维网段。请列出相关配置行作为判定依据。,交换机,华为,1,display ssh server status; display current-configuration | include telnet,高风险,二级/三级
+日志与时间同步,应配置日志服务器和 NTP 时间同步,GB/T 22239-2019,核查是否配置 syslog/info-center 日志外发和 NTP 时间同步；三级要求日志外发并留存不少于180天。请列出相关配置行作为判定依据。,交换机,华为,1,display info-center; display ntp status,中风险,二级/三级
+防火墙默认拒绝,安全策略应默认拒绝并最小化放通,GB/T 22239-2019,核查是否存在 any-any-allow、默认允许策略、长期零命中策略；三级要求默认拒绝且策略有业务说明。请列出策略名称和命中记录作为判定依据。,防火墙,通用,1,show firewall policy,高风险,二级/三级

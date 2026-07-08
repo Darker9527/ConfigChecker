@@ -1,0 +1,185 @@
+﻿task_id,task_name,devtype,brand,baseline_name,status,risk,evidence,reason,suggestion
+3,api-smoke,交换机,华为,HUA-NET-001 SSH与Telnet,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,HUA-NET-002 AAA与本地用户,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,HUA-NET-003 日志与NTP,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,SSH管理安全,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,VRP-AAA口令,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,VRP-SNMPv3,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,VRP-SSH与Telnet,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L4: user-interface vty 0 4
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,VRP-VTY-ACL,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L4: user-interface vty 0 4
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,VRP-日志NTP,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,日志与时间同步,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,交换机VLAN配置,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,交换机日志审计,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,交换机端口安全,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,交换机管理安全,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,入侵防范-SNMP安全,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,入侵防范-关闭高危服务,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,入侵防范-端口安全,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L8: rule 5 permit source 10.10.10.0 0.0.0.255
+L9: info-center enable
+L10: info-center loghost 10.10.20.10",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,安全审计-日志服务器,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,网络架构-VLAN隔离,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,访问控制-ACL最小化,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,身份鉴别-加密管理,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,身份鉴别-本地账户,需复核,高风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。
+3,api-smoke,交换机,华为,身份鉴别-登录超时失败,需复核,中风险,"L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable",配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。,对照基线判定标准逐项确认当前值、范围、例外和留存记录。

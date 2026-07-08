@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<config_check_report><task><id>2</id><name>smoke2</name><devtype>交换机</devtype><brand>华为</brand><config_path>examples\huawei.cfg</config_path><created_at>2026-07-07 18:01:54</created_at></task><summary><status name="需复核" count="2" /></summary><results><result><baseline_name>SSH管理安全</baseline_name><status>需复核</status><risk>高风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result><result><baseline_name>日志与时间同步</baseline_name><status>需复核</status><risk>中风险</risk><evidence>L2: stelnet server enable
+L3: ssh server-source -i Vlanif10
+L5: authentication-mode aaa
+L6: protocol inbound ssh
+L7: acl number 2000
+L9: info-center enable
+L10: info-center loghost 10.10.20.10
+L11: ntp-service enable</evidence><reason>配置中发现相关证据，需结合判定标准人工/AI复核是否完全满足。</reason><suggestion>对照基线判定标准逐项确认当前值、范围、例外和留存记录。</suggestion></result></results></config_check_report>
